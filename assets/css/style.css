@@ -379,11 +379,13 @@ footer {
     nav .navbar-nav .item-drop {
       margin-right: 0px !important; }
 
+  .header .slider-nav-con {
+    right: -43px !important; }
   .header .slider-nav {
-    top: -90px !important;
+    top: 3px !important;
     right: -110px !important; }
     .header .slider-nav .item {
-      width: 130px !important;
+      width: 230px !important;
       margin-right: 86px; }
       .header .slider-nav .item .slider-nav-content .slider-number {
         font-size: 30px; }
@@ -405,7 +407,10 @@ footer {
       font-size: 90px;
       position: absolute;
       top: -67px;
-      right: 132px; } }
+      right: 132px; }
+
+  .header .content p {
+    font-size: 33px !important; } }
 @media (max-width: 524px) {
   .header .content {
     max-width: 100% !important;
@@ -413,8 +418,14 @@ footer {
     left: 0; }
     .header .content p {
       font-size: 30px; }
-  .header .slider-nav {
-    display: none; }
+  .header .slider-nav-con {
+    right: -20px !important; }
+  .header .slider-nav .item {
+    opacity: 0;
+    width: 100%;
+    transition: all 1s ease; }
+  .header .slider-nav .slick-current {
+    opacity: 1; }
 
   .company-row-sliders .company-follow-us, .company-row-sliders .company-help-us {
     margin-top: 10px; }
@@ -435,7 +446,10 @@ footer {
         right: 0 !important;
         bottom: 17px !important; }
     footer .socila-footer {
-      text-align: right; } }
+      text-align: right; }
+
+  .header .slider-for .slick-arrow {
+    left: 33px !important; } }
 @media (max-width: 320px) {
   .contact-us .form-section .form-form .form-control {
     width: 248px !important; } }

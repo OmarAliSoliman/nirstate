@@ -527,11 +527,14 @@ footer{
     }
   }
   .header{
+     .slider-nav-con{
+       right: -43px !important;
+     }
     .slider-nav{
-      top: -90px !important;
+      top: 3px !important;
       right: -110px !important;
       .item{
-        width: 130px !important;
+        width: 230px !important;
         margin-right: 86px;
         .slider-nav-content{
           .slider-number{
@@ -547,9 +550,6 @@ footer{
   .company{
     .company-content{
       max-width: 100% !important;
-      p{
-
-      }
     }
   }
   .contact-us{
@@ -572,6 +572,9 @@ footer{
       }
     }
   }
+  .header .content p{
+    font-size: 33px !important;
+  }
 }
 
 @media(max-width: 524px){
@@ -584,8 +587,18 @@ footer{
         font-size: 30px;
       }
     }
+    .slider-nav-con{
+      right: -20px !important;
+    }
     .slider-nav{
-      display: none;
+      .item{
+        opacity: 0;
+        width: 100%;
+        transition: all 1s ease;
+      }
+      .slick-current{
+        opacity: 1;
+      }
     }
   }
   .company-row-sliders .company-follow-us, .company-row-sliders .company-help-us{
@@ -615,6 +628,9 @@ footer{
     .socila-footer{
       text-align: right;
     }
+  }
+  .header .slider-for .slick-arrow{
+    left: 33px !important;
   }
 }
 
